@@ -11,3 +11,41 @@
 5.  Shortly after the appearance of WebAssembly another paper proposed a mechanized specification of the language using Isabelle. The paper can be consulted here: https://www.cl.cam.ac.uk/~caw77/papers/mechanising-and-verifying-the-webassembly-specification.pdf. This mechanized specification complements the first formalization attempt from the paper. According to the author of this second paper, what are the main advantages of the mechanized specification? Did it help improving the original formal specification of the language? What other artifacts were derived from this mechanized specification? How did the author verify the specification? Does this new specification removes the need for testing?
 
 ## Answers
+3.
+what are the concrete experiments they perform?
+	Netflix a un service interne, Chaos Monkey, qui arrête aléatoirement des machines hôtes de la compagnie pendant les heures normales de travail, forçant les ingénieurs a designer des logiciels résilients.
+	
+what are the requirements for these experiments?
+	Il faut spécifier les hypothèses, les variables indépendantes, les variables dépendantes, le contexte.
+	
+what are the variables they observe?
+	Ils regardent combien d'utilisateurs commencent une vidéo par seconde, ce qu'ils appellent SPS (Starts Per Second).
+
+what are the main results they obtained?
+	Les ingénieurs de Netflix conçoivent des services capable de gérer 
+
+Is Netflix the only company performing these experiments?
+	L'article évoque le fait qu'Amazon, Google, Microsoft et Facebook utilisent des techniques similaires.
+
+Speculate how these experiments could be carried in other organizations in terms of the kind of experiment that could be performed and the system variables to observe during the experiments.
+	Une expérience très similaire pourrait être mené chez Google, en s'intéressant au nombre de recherches par seconde (au lieu du SPS).
+
+
+4.
+what are the main advantages of having a formal specification for WebAssembly?
+	Avoir une spécification formelle permet d'assurer une plus grande fiabilité en vérifiant des propriétés clefs avec des méthodes rigoureuses. Cela rend WebAssembly fiable, mais aussi rapide, indépendant de la plateforme, du langage et du hardware, déterministe, et facile à compiler et de raisonner sur.
+
+In your opinion, does this mean that WebAssembly implementations should not be tested?
+	WebAssembly doit quand même être testé, car si sa spécification est formellement écrite, son implémentation peut toujours contenir des erreurs ; être sûr de ce que doit faire le langage ne signifie pas que l'on est sûr de comment le langage le fait.
+
+
+5. https://www.cl.cam.ac.uk/~caw77/papers/mechanising-and-verifying-the-webassembly-specification.pdf
+According to the author of this second paper, what are the main advantages of the mechanized specification?
+
+Did it help improving the original formal specification of the language?
+
+What other artifacts were derived from this mechanized specification?
+
+How did the author verify the specification?
+
+Does this new specification removes the need for testing?
