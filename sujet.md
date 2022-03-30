@@ -11,8 +11,20 @@
 5.  Shortly after the appearance of WebAssembly another paper proposed a mechanized specification of the language using Isabelle. The paper can be consulted here: https://www.cl.cam.ac.uk/~caw77/papers/mechanising-and-verifying-the-webassembly-specification.pdf. This mechanized specification complements the first formalization attempt from the paper. According to the author of this second paper, what are the main advantages of the mechanized specification? Did it help improving the original formal specification of the language? What other artifacts were derived from this mechanized specification? How did the author verify the specification? Does this new specification removes the need for testing?
 
 ## Answers
-3.
-what are the concrete experiments they perform?
+1.En Juin 2000, Nike a connecté son nouveau logiciel d'analyse avec son système de commande obsolète. Il fallait jusqu’à une minute pour enregistrer une seule entrée dans le logiciel. Recevant des dizaines de millions de numéros de produits de Nike, le système plantait fréquemment. De nombreux bug ont été observés comme l’ignorance de commandes, la duplication de certaines ou la suppression de données de commande. ce qui a dupliqué des commandes et a généré 500 millions de dollars de pertes.
+I2, la compagnie qui a développé le système de chaine d'approvisionnement de Nike, a vu ses actions subir une importante chute après avoir été accusée à tort de l'incident.
+Le logiciel était tellement personnalisé pour fonctionner avec les anciens systèmes qu’ 
+
+
+2.Ce bug représente une faille de sécurité qui permet d’exécuter des commandes utilisateurs sur des machines hôtes.
+C’est un bug local en ce que le problème vient du code en tant que tel qui n’a pas prévu cet usage.
+Ce bug utilisait une faille dans le code de désérialisation de la classe InvokerTransformer.
+Pour régler ce problème, la sérialisation de la classe a été désactivée par défaut.
+
+https://issues.apache.org/jira/projects/COLLECTIONS/issues/COLLECTIONS-580?filter=doneissues&orderby=votes+DESC%2C+updated+DESC
+
+
+3.what are the concrete experiments they perform?
 	Netflix a un service interne, Chaos Monkey, qui arrête aléatoirement des machines hôtes de la compagnie pendant les heures normales de travail, forçant les ingénieurs a designer des logiciels résilients.
 	
 what are the requirements for these experiments?
@@ -31,11 +43,7 @@ Speculate how these experiments could be carried in other organizations in terms
 	Une expérience très similaire pourrait être mené chez Google, en s'intéressant au nombre de recherches par seconde (au lieu du SPS).
 
 
-4.
-what are the main advantages of having a formal specification for WebAssembly?
-	Avoir une spécification formelle permet d'assurer une plus grande fiabilité en vérifiant des propriétés clefs avec des méthodes rigoureuses. Cela rend WebAssembly fiable, mais aussi rapide, indépendant de la plateforme, du langage et du hardware, déterministe, et facile à compiler et de raisonner sur.
-
-In your opinion, does this mean that WebAssembly implementations should not be tested?
+4.	Avoir une spécification formelle permet d'assurer une plus grande fiabilité en vérifiant des propriétés clefs avec des méthodes rigoureuses. Cela rend WebAssembly fiable, mais aussi rapide, indépendant de la plateforme, du langage et du hardware, déterministe, et facile à compiler et de raisonner sur.
 	WebAssembly doit quand même être testé, car si sa spécification est formellement écrite, son implémentation peut toujours contenir des erreurs ; être sûr de ce que doit faire le langage ne signifie pas que l'on est sûr de comment le langage le fait.
 
 
