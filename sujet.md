@@ -13,7 +13,6 @@
 ## Answers
 1.En Juin 2000, Nike a connecté son nouveau logiciel d'analyse avec son système de commande obsolète. Il fallait jusqu’à une minute pour enregistrer une seule entrée dans le logiciel. Recevant des dizaines de millions de numéros de produits de Nike, le système plantait fréquemment. De nombreux bug ont été observés comme l’ignorance de commandes, la duplication de certaines ou la suppression de données de commande. ce qui a dupliqué des commandes et a généré 500 millions de dollars de pertes.
 I2, la compagnie qui a développé le système de chaine d'approvisionnement de Nike, a vu ses actions subir une importante chute après avoir été accusée à tort de l'incident.
-Le logiciel était tellement personnalisé pour fonctionner avec les anciens systèmes qu’ 
 
 
 2.Ce bug représente une faille de sécurité qui permet d’exécuter des commandes utilisateurs sur des machines hôtes.
@@ -34,7 +33,7 @@ what are the variables they observe?
 	Ils regardent combien d'utilisateurs commencent une vidéo par seconde, ce qu'ils appellent SPS (Starts Per Second).
 
 what are the main results they obtained?
-	Les ingénieurs de Netflix conçoivent des services capable de gérer 
+	Les ingénieurs de Netflix conçoivent efficacement des services capable de gérer les problèmes ainsi rencontrés.
 
 Is Netflix the only company performing these experiments?
 	L'article évoque le fait qu'Amazon, Google, Microsoft et Facebook utilisent des techniques similaires.
@@ -51,3 +50,5 @@ Speculate how these experiments could be carried in other organizations in terms
 Isabelle est accompagnée d’un interpréteur exécutable vérifié et d’un vérificateur de types qui ont aidé à vérifier la spécification de WebAssembly.
 Cette spécification mécanisée, quoique apparemment meilleure que l’originale, ne libère pas de la nécessité de tester. En effet, même avec une spécification parfaite, un programmeur utilisant WebAssembly peut toujours faire des erreurs de son côté qui respectent à priori la spécification (pour un exemple des plus simples, il peut avoir mis un ‘-’ au lieu d’un ‘+’).
 
+
+# TP fait en binôme (Lucas Lemaitre et Jean-Loup Moll)
